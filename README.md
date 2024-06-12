@@ -28,10 +28,25 @@ commons-logging.jar and fontbox
 
 
 ### How to use on Linux/Mac
+Original
 ```
 cd PDFLayoutTextStripper
 javac -cp .:/pathto/pdfbox-2.0.6.jar:/pathto/commons-logging-1.2.jar:/pathto/PDFLayoutTextStripper/fontbox-2.0.6.jar *.java
 java -cp .:/pathto/pdfbox-2.0.6.jar:/pathto/commons-logging-1.2.jar:/pathto/PDFLayoutTextStripper/fontbox-2.0.6.jar test
+```
+New
+```
+cd PDFLayoutTextStripper
+mvn compile
+javac -cp .:/pathto/pdfbox-2.0.6.jar:/pathto/commons-logging-1.2.jar:/pathto/fontbox-2.0.6.jar:/pathto/PDFLayoutTextStripper/target/PDFLayoutTextStripper-2.2.5-SNAPSHOT.jar *.java
+java -cp .:/pathto/pdfbox-2.0.6.jar:/pathto/commons-logging-1.2.jar:/pathto/fontbox-2.0.6.jar:/pathto/PDFLayoutTextStripper-2.2.5-SNAPSHOT.jar test
+```
+Personal Matteo
+```
+cd PDFLayoutTextStripper
+mvn compile
+javac -cp .:/Users/matteocirca/projects/CodeoC/dependencies/pdfbox-2.0.6.jar:/Users/matteocirca/projects/CodeoC/dependencies/commons-logging-1.2.jar:/Users/matteocirca/projects/CodeoC/dependencies/fontbox-2.0.6.jar:/Users/matteocirca/projects/CodeoC/PDFLayoutTextStripper/target/PDFLayoutTextStripper-2.2.5-SNAPSHOT.jar *.java
+java -cp .:/Users/matteocirca/projects/CodeoC/dependencies/pdfbox-2.0.6.jar:/Users/matteocirca/projects/CodeoC/dependencies/commons-logging-1.2.jar:/Users/matteocirca/projects/CodeoC/dependencies/fontbox-2.0.6.jar:/Users/matteocirca/projects/CodeoC/PDFLayoutTextStripper/target/PDFLayoutTextStripper-2.2.5-SNAPSHOT.jar test
 ```
 
 ### How to use on Windows
@@ -66,6 +81,9 @@ public class test {
 	}
 }
 ```
+
+## Credits
+This code is based on the code of the [PDFLayoutTextStripper](https://github.com/JonathanLink/PDFLayoutTextStripper) repo.
 
 ## Contributors
 Thanks to
