@@ -82,6 +82,10 @@ public class test {
 }
 ```
 
+## Extra
+
+[Convertio](https://convertio.co) service can be used to convert PDF files to text files online.
+
 ## Credits
 This code is based on the code of the [PDFLayoutTextStripper](https://github.com/JonathanLink/PDFLayoutTextStripper) repo.
 
