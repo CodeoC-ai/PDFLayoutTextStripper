@@ -17,6 +17,12 @@ public class test {
 	public static void main(String[] args) {
         File dir = new File("input/");
         File[] directoryListing = dir.listFiles();
+        // delete .DS_Store file
+        for (File child : directoryListing) {
+            if (child.getName().equals(".DS_Store")) {
+                child.delete();
+            }
+        }
         if (directoryListing != null) {
             System.out.println(directoryListing.length + " files found in the directory.");
             for (File child : directoryListing) {
